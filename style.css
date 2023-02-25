@@ -260,7 +260,7 @@ p {
     justify-content: space-between;
 }
 
-.skill_bar {
+.skill__bar {
     width: 100%;
     height: 3px;
     background-color: var(--color-grey);
@@ -281,7 +281,6 @@ p {
 }
 
 /* Work */
-
 .work__categories{
     margin: 40px;
 }
