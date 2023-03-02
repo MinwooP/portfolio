@@ -115,10 +115,11 @@ p {
     padding: 16px;
     background-color: transparent;
     transition: all var(--animation-duration) ease-in-out;
+    z-index: 1;
 }
 
-#navbar.narbar--dark {
-    background-color: pink;
+#navbar.navbar--dark {
+    background-color: var(--color-pink);
     padding: 8px;
 }
 
