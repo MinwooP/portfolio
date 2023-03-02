@@ -19,10 +19,18 @@ navbarMenu.addEventListener('click', (event) => { // navbarMenu를 클릭했을 
     if(link == null){
         return;
     }
-    const scrollTo = document.querySelector(link); // 선택한 menu에 해당하는 요소를 선택
-    scrollTo.scrollIntoView({behavior: 'smooth'}); // 해당 요소로 스크롤 이동
+    
+    scrollIntoView(link);
+});
+
+// Handle contact me button
+const contactButton = document.querySelector('.home__contact');
+contactButton.addEventListener('click', () => {
+    scrollIntoView('#contact');
 });
 
 
-
-
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior: 'smooth'});
+}
