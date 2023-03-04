@@ -17,18 +17,20 @@ navbarMenu.addEventListener("click", (event) => {
   // navbarMenu를 클릭했을 때
   const target = event.target;
   const link = target.dataset.link; // 어떤 menu를 선택했는지 link에 담음.
+
+  console.log(event.target);
+  console.log(event.target.dataset.link);
   if (link == null) {
     return;
   }
   navbarMenu.classList.remove("open");
   scrollIntoView(link);
-}); 
+});
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
 navbarToggleBtn.addEventListener("click", () => {
   navbarMenu.classList.toggle("open");
-  console.log(navbarMenu.classList);
 });
 
 // Handle contact me button
